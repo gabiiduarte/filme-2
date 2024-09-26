@@ -65,3 +65,43 @@ header {
     border-radius: 5px;
     margin: 20px;
 }
+.novidades {
+    margin: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 200px; /* Ajuste conforme necessário */
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    background-color: #e50914; /* Vermelho da Netflix */
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
