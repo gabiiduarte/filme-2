@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #e50914; /* Vermelho da Netflix */
+    background-color: #77d1ec; /* Vermelho da Netflix */
 }
 
 .logo {
@@ -60,7 +60,7 @@ header {
 }
 
 #movie-details {
-    background-color: #333; /* Fundo escuro para detalhes */
+    background-color: #444141; /* Fundo escuro para detalhes */
     padding: 20px;
     border-radius: 5px;
     margin: 20px;
