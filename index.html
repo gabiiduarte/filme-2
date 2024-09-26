@@ -8,25 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Filmes de Animação</h1>
+        <div class="logo">Minha Animação</div>
+        <input type="text" placeholder="Buscar filmes..." class="search-bar">
     </header>
     <main>
-        <div class="movie" onclick="showDetails('toyStory')">
-            <img src="https://th.bing.com/th/id/OIP.Gpco4QFscjlSTYC7NgFtpwHaLD?rs=1&pid=ImgDetMain" alt="Toy Story" class="movie-image">
-            <h3>Toy Story</h3>
-            <p>Direção: John Lasseter</p>
-        </div>
-        <div class="movie" onclick="showDetails('frozen')">
-            <img src="https://link-da-imagem-frozen" alt="Frozen" class="movie-image">
-            <h3>Frozen</h3>
-            <p>Direção: Chris Buck, Jennifer Lee</p>
-        </div>
-        <div class="movie" onclick="showDetails('insideOut')">
-            <img src="https://link-da-imagem-inside-out" alt="Divertida Mente" class="movie-image">
-            <h3>Divertida Mente</h3>
-            <p>Direção: Pete Docter</p>
+        <div class="movie-grid">
+            <div class="movie" onclick="showDetails('toyStory')">
+                <img src="https://link-da-imagem-toy-story" alt="Toy Story" class="movie-image">
+                <h3>Toy Story</h3>
+                <p>Direção: John Lasseter</p>
+            </div>
+            <div class="movie" onclick="showDetails('frozen')">
+                <img src="https://link-da-imagem-frozen" alt="Frozen" class="movie-image">
+                <h3>Frozen</h3>
+                <p>Direção: Chris Buck, Jennifer Lee</p>
+            </div>
+            <!-- Adicione mais filmes aqui -->
         </div>
     </main>
+    <div id="movie-details" class="hidden">
+        <h2>Detalhes do Filme</h2>
+        <p id="details-text"></p>
+        <button onclick="hideDetails()">Fechar</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

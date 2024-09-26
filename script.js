@@ -1,14 +1,10 @@
-function showDetails(movie) {
-    const detailsText = {
-        toyStory: "Toy Story é um filme de animação da Pixar que segue as aventuras de Woody, Buzz Lightyear e seus amigos.",
-        frozen: "Frozen é uma animação da Disney sobre duas irmãs, Elsa e Anna, e suas jornadas de amor e autodescoberta.",
-        insideOut: "Divertida Mente explora as emoções de uma menina chamada Riley, representadas como personagens que a ajudam a navegar pela vida."
-    };
+// Exemplo básico para filtrar filmes
+const movies = document.querySelectorAll('.movie');
 
-    document.getElementById('details-text').innerText = detailsText[movie];
-    document.getElementById('movie-details').classList.remove('hidden');
-}
-
-function hideDetails() {
-    document.getElementById('movie-details').classList.add('hidden');
-}
+document.querySelector('.search-bar').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    movies.forEach(movie => {
+        const title = movie.querySelector('h3').innerText.toLowerCase();
+        movie.style.display = title.includes(searchTerm) ? 'block' : 'none';
+    });
+});
