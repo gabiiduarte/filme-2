@@ -8,22 +8,3 @@ document.querySelector('.search-bar').addEventListener('input', function() {
         movie.style.display = title.includes(searchTerm) ? 'block' : 'none';
     });
 });
-let currentIndex = 0;
-
-function moveCarousel(direction) {
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalItems - 1;
-    } else if (currentIndex >= totalItems) {
-        currentIndex = 0;
-    }
-
-    const offset = -currentIndex * 220; // Ajuste de acordo com a largura do item
-    items.forEach(item => {
-        item.style.transform = `translateX(${offset}px)`;
-    });
-}
