@@ -1,3 +1,5 @@
+
+Copiar código
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,104 +9,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/be7a32246a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link  rel="preconnect" href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
-    .+.
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
 </head>
 <body>
-   
 
-    <div class="movie-grid">
-        <!-- Seus filmes aqui -->
+    <div class="dragao">
+        <i class="fa-solid fa-dragon fa-lg" style="color: #570000;"></i>
     </div>
-</main>
-<div class="dragao">
-    <i class="fa-solid fa-dragon fa-lg" style="color: #570000;"></i>
-  </div>
-      <nav class="w3-bar w3-black">
-          <a href="#" class="w3-button w3-bar-item">PRINCIPAL</a>
-          <a href="TEMAA/index.html" class="w3-button w3-bar-item">SÉRIE</a>
-          <a href="#" class="w3-button w3-bar-item">AJUDA</a>   
-          <a href="#" class="w3-button w3-bar-item">NOVO</a>  
-          <a href="NOSTALGIA/INDEX.HTML" class="w3-button w3-bar-item">NOSTALGIA</a>  
-          
-      </nav>
-     
-      <div class="container">
-  
-          <section>
-            <img class="mySlides" src="https://th.bing.com/th/id/R.51e092634f679b284f50df95c0be8a4b?rik=cnwWADncVvhL7Q&riu=http%3a%2f%2fstraightfromamovie.com%2fwp-content%2fuploads%2f2016%2f10%2fstorks-movie.jpg&ehk=5csiE4qOBxxHtRDGg%2f39SgLtDTqg5DlH2Hp6d1oH9QI%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
-            <img class="mySlides" src="https://th.bing.com/th/id/R.c56878f435b42095567d2b173dd68141?rik=qEN7GFUsQTW%2fCw&pid=ImgRaw&r=0" style="width:100%">
-            <img class="mySlides" src="https://img.ibxk.com.br/2020/02/19/19091948111454.jpg?w=380" style="width:100%">
-          </section>
-    
-          <section class="w3-container w3-center w3-content" style="max-width:px">
-            <h2 class="w3-wide">CartoonCine</h2>
-            <p class="bm"><i>BEM-VINDO!</i></p>
+
+    <nav class="w3-bar w3-black">
+        <a href="#" class="w3-button w3-bar-item">PRINCIPAL</a>
+        <a href="TEMAA/index.html" class="w3-button w3-bar-item">SÉRIE</a>
+        <a href="#" class="w3-button w3-bar-item">AJUDA</a>
+        <a href="#" class="w3-button w3-bar-item">NOVO</a>
+        <a href="NOSTALGIA/INDEX.HTML" class="w3-button w3-bar-item">NOSTALGIA</a>
+    </nav>
+
     <header>
         <div class="logo">Minha Animação</div>
         <input type="text" placeholder="Buscar filmes..." class="search-bar">
     </header>
+
     <main>
+        <section class="w3-container w3-center w3-content">
+            <h2 class="w3-wide">CartoonCine</h2>
+            <p class="bm"><i>BEM-VINDO!</i></p>
+        </section>
+
         <div class="movie-grid">
             <div class="movie" onclick="showDetails('toyStory')">
                 <img src="https://th.bing.com/th/id/OIP.Gpco4QFscjlSTYC7NgFtpwHaLD?rs=1&pid=ImgDetMain" alt="Toy Story" class="movie-image">
                 <h3>Toy Story</h3>
                 <p>Direção: John Lasseter</p>
             </div>
-            <div class="movie" onclick="showDetails('Estranho Mundo De jack')">
-                <img src="https://th.bing.com/th/id/OIP.Qa_VbmVlMBJcJxu5mTnFEAAAAA?rs=1&pid=ImgDetMain" alt="Estranho Mundo De jack" class="movie-image">
-                <h3>Estranho Mundo De jack</h3>
+            <div class="movie" onclick="showDetails('Estranho Mundo De Jack')">
+                <img src="https://th.bing.com/th/id/OIP.Qa_VbmVlMBJcJxu5mTnFEAAAAA?rs=1&pid=ImgDetMain" alt="Estranho Mundo De Jack" class="movie-image">
+                <h3>Estranho Mundo De Jack</h3>
                 <p>Direção: Chris Buck, Jennifer Lee</p>
             </div>
-            <!-- Adicione mais filmes aqui -->
             <div class="movie" onclick="showDetails('Rango')">
                 <img src="https://th.bing.com/th/id/R.1d80aacbeacb016cb86ff8b70d329492?rik=Og%2fWaCC0crcTbg&pid=ImgRaw&r=0" alt="Rango" class="movie-image">
                 <h3>Rango</h3>
-                <p>é um camaleão da cidade grande que vai parar, após um acidente, em pleno velho oeste, na cidade de Poeira no deserto do Mojave, na Califórnia.</p>
+                <p>Um camaleão da cidade grande que vai parar no velho oeste.</p>
             </div>
-
-            <div class="movie" onclick="showDetails('os croods')"></div>
-                <article class="w3-third">
-                <img src="https://th.bing.com/th/id/OIP.0C4WhJwHxbSqbWHbr9p9IwHaLH?rs=1&pid=ImgDetMain" alt="os croods" class="movie-image">
-                <h3>os croods</h3>
-                <p>Eles são os Croods, uma família liderada por um pai que morre de medo do mundo exterior.Só que grandes transformações estão para acontecer, pois a adolescente Eep acaba conhecendo jovem Guy </p>
+            <div class="movie" onclick="showDetails('Os Croods')">
+                <img src="https://th.bing.com/th/id/OIP.0C4WhJwHxbSqbWHbr9p9IwHaLH?rs=1&pid=ImgDetMain" alt="Os Croods" class="movie-image">
+                <h3>Os Croods</h3>
+                <p>Uma família liderada por um pai que teme o mundo exterior.</p>
             </div>
-
-            <div class="movie" onclick="showDetails('')"></div>
-                <img src="" alt="Frozen" class="movie-image">
+            <div class="movie" onclick="showDetails('Frozen')">
+                <img src="https://th.bing.com/th/id/OIP.OIPu0H1H0HZG_kcHrxFDzQHaLH?pid=ImgDet&w=300&h=300" alt="Frozen" class="movie-image">
                 <h3>Frozen</h3>
                 <p>Direção: Chris Buck, Jennifer Lee</p>
             </div>
-
-                <div class="movie" onclick="showDetails('')"></div>
-                <img src="" alt="Frozen" class="movie-image">
-                <h3>Frozen</h3>
-                <p>Direção: Chris Buck, Jennifer Lee</p>
-            </div>
-
-            <div class="movie" onclick="showDetails('')"></div>
-            <img src="" alt="Frozen" class="movie-image">
-            <h3>Frozen</h3>
-            <p>Direção: Chris Buck, Jennifer Lee</p>
-           </div>
-
-           <div class="movie" onclick="showDetails('')"></div>
-          <img src="" alt="Frozen" class="movie-image">
-          <h3>Frozen</h3>
-          <p>Direção: Chris Buck, Jennifer Lee</p>
-         </div>       </div>
+        </div>
     </main>
+
     <div id="movie-details" class="hidden">
         <h2>Detalhes do Filme</h2>
         <p id="details-text"></p>
         <button onclick="hideDetails()">Fechar</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
