@@ -1,5 +1,4 @@
 
-Copiar código
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,6 +9,66 @@ Copiar código
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/be7a32246a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+    <style>
+        /* Adicione alguns estilos básicos */
+        body {
+            font-family: 'Rubik Doodle Triangles', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-bar {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .movie {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        .movie-image {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        #movie-details {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        #movie-details.hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -42,22 +101,22 @@ Copiar código
                 <h3>Toy Story</h3>
                 <p>Direção: John Lasseter</p>
             </div>
-            <div class="movie" onclick="showDetails('Estranho Mundo De Jack')">
+            <div class="movie" onclick="showDetails('estranhoMundoDeJack')">
                 <img src="https://th.bing.com/th/id/OIP.Qa_VbmVlMBJcJxu5mTnFEAAAAA?rs=1&pid=ImgDetMain" alt="Estranho Mundo De Jack" class="movie-image">
                 <h3>Estranho Mundo De Jack</h3>
                 <p>Direção: Chris Buck, Jennifer Lee</p>
             </div>
-            <div class="movie" onclick="showDetails('Rango')">
+            <div class="movie" onclick="showDetails('rango')">
                 <img src="https://th.bing.com/th/id/R.1d80aacbeacb016cb86ff8b70d329492?rik=Og%2fWaCC0crcTbg&pid=ImgRaw&r=0" alt="Rango" class="movie-image">
                 <h3>Rango</h3>
                 <p>Um camaleão da cidade grande que vai parar no velho oeste.</p>
             </div>
-            <div class="movie" onclick="showDetails('Os Croods')">
+            <div class="movie" onclick="showDetails('osCroods')">
                 <img src="https://th.bing.com/th/id/OIP.0C4WhJwHxbSqbWHbr9p9IwHaLH?rs=1&pid=ImgDetMain" alt="Os Croods" class="movie-image">
                 <h3>Os Croods</h3>
                 <p>Uma família liderada por um pai que teme o mundo exterior.</p>
             </div>
-            <div class="movie" onclick="showDetails('Frozen')">
+            <div class="movie" onclick="showDetails('frozen')">
                 <img src="https://th.bing.com/th/id/OIP.OIPu0H1H0HZG_kcHrxFDzQHaLH?pid=ImgDet&w=300&h=300" alt="Frozen" class="movie-image">
                 <h3>Frozen</h3>
                 <p>Direção: Chris Buck, Jennifer Lee</p>
@@ -72,5 +131,23 @@ Copiar código
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function showDetails(movie) {
+            const detailsText = {
+                toyStory: 'Toy Story é um filme de animação de 1995 produzido pela Pixar Animation Studios.',
+                estranhoMundoDeJack: 'Estranho Mundo de Jack é um clássico de Tim Burton sobre o Halloween e o Natal.',
+                rango: 'Rango é um camaleão que se torna xerife em uma cidade do velho oeste.',
+                osCroods: 'Os Croods seguem uma família pré-histórica em uma aventura pela sobrevivência.',
+                frozen: 'Frozen é uma história de amor entre irmãs em um mundo congelado.'
+            };
+
+            document.getElementById('details-text').innerText = detailsText[movie];
+            document.getElementById('movie-details').classList.remove('hidden');
+        }
+
+        function hideDetails() {
+            document.getElementById('movie-details').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
