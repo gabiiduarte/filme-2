@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #141414; /* Cor de fundo semelhante à Netflix */
-    color: white; /* Texto branco para contraste */
-    margin: 0;
-    padding: 0;
+  background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-view-of-the-outer-space-with-all-the-planets-picture-image_3403234.jpg'); /* Caminho para a imagem */
+  background-repeat: repeat; /* A imagem se repetirá */
+  background-size: auto; /* Tamanho padrão da imagem */
+  background-position: top left; /* Imagem posicionada no canto superior esquerdo */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o padding padrão do body */
+  height: 100vh; /* Garante que o body ocupe a altura total da tela */
 }
 
 header {
