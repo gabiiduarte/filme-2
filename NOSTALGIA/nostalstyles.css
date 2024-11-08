@@ -6,10 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    background-image: url('https://th.bing.com/th/id/R.b748060d73fedcc9475d278d845edb06?rik=%2fOth44aMG7QoaQ&pid=ImgRaw&r=0'); /* Caminho para a imagem */
+    background-repeat: repeat; /* A imagem se repetirá */
+    background-size: auto; /* Tamanho padrão da imagem */
+    background-position: top left; /* Imagem posicionada no canto superior esquerdo */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+  }
 
 header {
     text-align: center;
