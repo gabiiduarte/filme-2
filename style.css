@@ -73,7 +73,6 @@ header {
 .movie h3,
 .movie p {
   color: #000000; /* Cor branca para o texto */
-  font-family: "Rubik Doodle Triangles", cursive; /* Fonte de estilo desenhada */
   font-size: 1.2rem;
   margin-top: 10px;
   margin-bottom: 5px;
