@@ -1,3 +1,4 @@
+/* Definir o fundo do body */
 body {
   background-image: url('https://th.bing.com/th/id/R.b748060d73fedcc9475d278d845edb06?rik=%2fOth44aMG7QoaQ&pid=ImgRaw&r=0'); /* Caminho para a imagem */
   background-repeat: repeat; /* A imagem se repetirá */
@@ -50,6 +51,7 @@ header {
   transition: transform 0.2s;
 }
 
+/* Efeito de zoom ao passar o mouse */
 .movie:hover {
   transform: scale(1.05);
 }
@@ -62,17 +64,35 @@ header {
   height: auto; /* Mantém a proporção da imagem */
 }
 
-/* Efeito de zoom ao passar o mouse */
+/* Efeito de zoom na imagem */
 .movie-image:hover {
   transform: scale(1.1);
 }
 
-/* Ocultar detalhes do filme */
-.hidden {
-  display: none;
+/* Estilo do texto abaixo da imagem (título e descrição) */
+.movie h3,
+.movie p {
+  color: #fff; /* Cor branca para o texto */
+  font-family: "Rubik Doodle Triangles", cursive; /* Fonte de estilo desenhada */
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra sutil no texto */
 }
 
-/* Estilo do box de detalhes do filme */
+/* Caixa abaixo da imagem com fundo transparente */
+.movie-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+  color: #fff; /* Cor do texto */
+  border-radius: 0 0 10px 10px; /* Borda arredondada na parte inferior */
+}
+
+/* Detalhes do filme */
 #movie-details {
   color: #fff; /* Texto branco */
   background-color: #000000; /* Fundo preto */
@@ -80,31 +100,6 @@ header {
   padding: 20px; /* Espaçamento interno */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-/* Estilo do texto do título do filme */
-.movie h3 {
-  color: #f8f8f8; /* Cor branca para o título */
-  font-family: "Rubik Doodle Triangles", cursive; /* Fonte de estilo desenhada */
-  font-size: 1.2rem; /* Tamanho ajustado do título */
-  margin-top: 10px; /* Margem para dar espaço em cima */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra sutil no texto */
-}
-
-/* Estilo do texto da direção do filme */
-.movie p {
-  color: #fff; /* Cor do texto */
-  font-family: 'Arial', sans-serif;
-  font-size: 0.9rem; /* Tamanho do texto da direção */
-  margin-bottom: 10px; /* Espaçamento abaixo do texto */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Sombra sutil no texto */
-}
-
-/* Estilo para a descrição no box de detalhes */
-#movie-details p {
-  font-family: 'Arial', sans-serif;
-  color: #ddd;
-  font-size: 1rem;
 }
 
 /* Responsividade: layout de duas colunas quando a tela for pequena */
@@ -121,7 +116,6 @@ header {
   }
 }
 
-/* Estilo para o título "Bem-vindo!" */
 .w3-wide {
   font-family: "Honk", system-ui;
   font-size: 50px;
@@ -129,7 +123,6 @@ header {
   color: #f4f4f4; /* Cor clara para o texto */
 }
 
-/* Estilo adicional para o texto "Bem-vindo!" */
 .bm {
   color: rgb(252, 254, 255);
   font-family: "Rubik Doodle Triangles", system-ui;
