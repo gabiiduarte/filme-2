@@ -8,6 +8,7 @@ body {
   padding: 0;
   height: 100vh;
   font-family: Arial, sans-serif; /* Fonte padrão */
+  background-size: cover; /* Imagem cobrirá a tela sem distorção */
 }
 
 /* Estilo do cabeçalho */
@@ -69,14 +70,14 @@ header {
   transform: scale(1.1);
 }
 
-/* Estilo do texto abaixo da imagem (título e descrição) */
 .movie h3,
 .movie p {
-  color: #000000; /* Cor branca para o texto */
-  font-size: 1.2rem;
+  color: #ffffff; /* Cor branca para o texto (mais legível) */
+  font-size: 1.2rem; /* Tamanho da fonte */
   margin-top: 10px;
   margin-bottom: 5px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra sutil no texto */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra sutil no texto para melhorar contraste */
+  font-family: 'Arial', sans-serif; /* Fonte legível */
 }
 
 /* Caixa abaixo da imagem com fundo transparente */
@@ -87,8 +88,10 @@ header {
   right: 0;
   padding: 10px;
   background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
-  color: #fff; /* Cor do texto */
+  color: #ffffff; /* Texto branco para boa legibilidade */
   border-radius: 0 0 10px 10px; /* Borda arredondada na parte inferior */
+  font-family: 'Arial', sans-serif; /* Fonte legível */
+  font-size: 1rem; /* Tamanho da fonte para o texto */
 }
 
 /* Detalhes do filme */
