@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Center content */
+.com {
+    font-family: "Honk", system-ui;
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.w3-third {
+    background-color: rgb(3, 3, 3);
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.w3-row-padding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.w3-row-padding article {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+}
+
+.w3-row-padding img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 900px) {
+    .w3-row-padding article {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .w3-row-padding article {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
+
+/* Adding background color to paragraphs inside articles */
+.w3-third p {
+    background-color: rgba(253, 253, 253, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
