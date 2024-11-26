@@ -14,13 +14,15 @@ body {
     padding: 0;
     height: 100vh;
     font-family: Arial, sans-serif; /* Fonte padrão */
-  }
+}
 
+/* Estilo do cabeçalho */
 header {
     text-align: center;
     padding: 20px;
     background-color: #444;
     color: white;
+    border-bottom: 3px solid #333; /* Pequena borda inferior para destacar */
 }
 
 header h1 {
@@ -33,15 +35,17 @@ header p {
     font-style: italic;
 }
 
+/* Grid para os filmes/desenhos */
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto; /* Centraliza e dá margem de 20px */
 }
 
+/* Estilo para cada item do desenho */
 .movie {
     text-align: center;
     background-color: #fff;
@@ -49,18 +53,22 @@ header p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    padding: 10px;
 }
 
+/* Efeito de hover nos itens */
 .movie:hover {
     transform: scale(1.05);
 }
 
+/* Estilo para a imagem do desenho */
 .movie-image {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #ddd; /* Borda sutil entre imagem e título */
 }
 
+/* Estilo do título do desenho */
 h3 {
     padding: 10px;
     background-color: #77d1ec;
@@ -68,6 +76,7 @@ h3 {
     font-size: 1.2rem;
 }
 
+/* Estilo do rodapé */
 footer {
     text-align: center;
     padding: 20px;
