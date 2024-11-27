@@ -16,71 +16,87 @@ body {
     font-family: Arial, sans-serif; /* Fonte padrão */
 }
 
-/* Estilo do cabeçalho */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-    border-bottom: 3px solid #333; /* Pequena borda inferior para destacar */
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/* Grid para os filmes/desenhos */
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto; /* Centraliza e dá margem de 20px */
-}
-
-/* Estilo para cada item do desenho */
-.movie {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .h1 {
+    font-size: 85px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .content {
+    background-color: rgb(253, 253, 253);
     padding: 10px;
-}
-
-/* Efeito de hover nos itens */
-.movie:hover {
-    transform: scale(1.05);
-}
-
-/* Estilo para a imagem do desenho */
-.movie-image {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ddd; /* Borda sutil entre imagem e título */
-}
-
-/* Estilo do título do desenho */
-h3 {
-    padding: 10px;
-    background-color: #77d1ec;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-/* Estilo do rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #444;
-    color: white;
-    margin-top: 20px;
-}
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  
+  
+  }
+  .com{
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+      font-size: 50px;
+      text-align: center;
+  }
+  
+  
+  .p{
+    background-color: rgb(253, 253, 253);
+  }
+  
+  .bm{
+    color: aliceblue;
+    font-family: "Rubik Doodle Triangles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .w3-third{
+    background-color: rgb(3, 3, 3);
+    color: aliceblue;
+  }
+  
+  .w3-row-padding {
+    background-color: rgb(3, 3, 3);
+  }
