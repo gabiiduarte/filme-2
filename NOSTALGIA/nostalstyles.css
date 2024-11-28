@@ -1,102 +1,100 @@
-/* Resetando as margens e paddings */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url('https://th.bing.com/th/id/R.b748060d73fedcc9475d278d845edb06?rik=%2fOth44aMG7QoaQ&pid=ImgRaw&r=0'); /* Caminho para a imagem */
-    background-repeat: repeat; /* A imagem se repetirá */
-    background-size: auto; /* Tamanho padrão da imagem */
-    background-position: top left; /* Imagem posicionada no canto superior esquerdo */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: Arial, sans-serif; /* Fonte padrão */
+  background-image: url('https://th.bing.com/th/id/R.b748060d73fedcc9475d278d845edb06?rik=%2fOth44aMG7QoaQ&pid=ImgRaw&r=0'); /* Caminho para a imagem */
+  background-repeat: repeat; /* A imagem se repetirá */
+  background-size: auto; /* Tamanho padrão da imagem */
+  background-position: top left; /* Imagem posicionada no canto superior esquerdo */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background-size: cover; /* Imagem cobrirá a tela sem distorção */
 }
 
 /* Center website */
 .main {
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .h1 {
-    font-size: 85px;
-    word-break: break-all;
-  }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
+  max-width: 1000px;
+  margin: auto;
+}
+
+.h1 {
+  font-size: 85px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
   .column {
-    float: left;
-    width: 25%;
+    width: 50%;
   }
-  
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  
-  
-  .content {
-    background-color: rgb(253, 253, 253);
-    padding: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  
-  
-  }
-  .com{
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
-      font-size: 50px;
-      text-align: center;
-  }
-  
-  
-  .p{
-    background-color: rgb(253, 253, 253);
-  }
-  
-  .bm{
-    color: aliceblue;
-    font-family: "Rubik Doodle Triangles", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .w3-third{
-    background-color: rgb(3, 3, 3);
-    color: aliceblue;
-  }
-  
-  .w3-row-padding {
-    background-color: rgb(3, 3, 3);
-  }
+
+
+}
+.com{
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.p{
+  background-color: rgb(253, 253, 253);
+}
+
+.bm{
+  color: aliceblue;
+  font-family: "Rubik Doodle Triangles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.w3-third{
+  background-color: rgb(3, 3, 3);
+  color: aliceblue;
+}
+
+.w3-row-padding {
+  background-color: rgb(3, 3, 3);
+}
