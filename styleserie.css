@@ -23,8 +23,29 @@ body {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
+    text-align: center; /* Para centralizar texto nas divs */
 }
 
+/* Uniformizar tamanho das imagens */
+.w3-third img {
+    width: 100%;
+    height: auto; /* Manter proporção da imagem */
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o limite do container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Uniformizar texto dentro das .w3-third */
+.w3-third p {
+    background-color: rgba(253, 253, 253, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6; /* Espaçamento de linha para o texto ficar mais uniforme */
+    color: #333; /* Cor do texto ajustada para melhor contraste */
+}
+
+/* Layout flex para artigos */
 .w3-row-padding {
     display: flex;
     flex-wrap: wrap;
@@ -32,32 +53,21 @@ body {
 }
 
 .w3-row-padding article {
-    flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
-}
-
-.w3-row-padding img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(33.33% - 20px); /* 3 items por linha */
+    display: flex;
+    flex-direction: column; /* Para garantir que a imagem e o texto fiquem alinhados na vertical */
+    justify-content: space-between; /* Garantir que haja espaço entre imagem e texto */
 }
 
 /* Mobile responsiveness */
 @media screen and (max-width: 900px) {
     .w3-row-padding article {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        flex: 1 1 calc(50% - 20px); /* 2 items por linha */
     }
 }
 
 @media screen and (max-width: 600px) {
     .w3-row-padding article {
-        flex: 1 1 100%; /* 1 item per row */
+        flex: 1 1 100%; /* 1 item por linha */
     }
-}
-
-/* Adding background color to paragraphs inside articles */
-.w3-third p {
-    background-color: rgba(253, 253, 253, 0.8);
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 14px;
 }
